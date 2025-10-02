@@ -35,6 +35,7 @@
 
         oneTap.render({
           container: document.getElementById('vkid-container'),
+          fastAuthEnabled: false,
           showAlternativeLogin: true
         })
         .on(VKID.WidgetEvents.ERROR, vkidOnError)
