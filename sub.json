@@ -1,0 +1,44 @@
+{
+  "subscription_name": "XNet Vpn",
+  "servers": [
+    {
+      "name": "MTC",
+      "type": "vless",
+      "address": "77.91.76.222",
+      "port": 443,
+      "uuid": "604e4c18-33e0-4261-8c25-cfd72b8fe0dd",
+      "network": "tcp",
+      "security": "reality",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "serverName": "vk.com"
+      },
+      "reality": {
+        "publicKey": "WZFbkosGbyIZhHfvNs_2qe8xJF7g22vWY8ZYjkRYsXw",
+        "shortId": "0f4a46",
+        "fingerprint": "random",
+        "path": "/"
+      }
+    },
+    {
+      "name": "MEGAFON",
+      "type": "vless",
+      "address": "89.208.104.217",
+      "port": 443,
+      "uuid": "ed2d456c-a136-41f1-9b18-a342da63b6ad",
+      "network": "tcp",
+      "security": "reality",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "serverName": "www.wildberries.ru"
+      },
+      "reality": {
+        "publicKey": "JJhQnQbGrM661Qy7JwFwS5X5JEuPzbi3nfYJ5QS6rCA",
+        "shortId": "fe00",
+        "fingerprint": "chrome",
+        "path": "/"
+      }
+    }
+  ]
+}
+
