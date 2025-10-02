@@ -1,2 +1,2 @@
-vless://604e4c18-33e0-4261-8c25-cfd72b8fe0dd@77.91.76.222:443?type=tcp&security=reality&pbk=WZFbkosGbyIZhHfvNs_2qe8xJF7g22vWY8ZYjkRYsXw&fp=random&sni=vk.com&sid=0f4a46&spx=%2F&flow=xtls-rprx-vision#MTC
-vless://ed2d456c-a136-41f1-9b18-a342da63b6ad@89.208.104.217:443?type=tcp&security=reality&pbk=JJhQnQbGrM661Qy7JwFwS5X5JEuPzbi3nfYJ5QS6rCA&fp=chrome&sni=www.wildberries.ru&sid=fe00&spx=%2F&flow=xtls-rprx-vision#MEGAFON
+vless://604e4c18-33e0-4261-8c25-cfd72b8fe0dd@77.91.76.222:443?type=tcp&security=reality&pbk=WZFbkosGbyIZhHfvNs_2qe8xJF7g22vWY8ZYjkRYsXw&fp=random&sni=vk.com&sid=0f4a46&spx=%2F&flow=xtls-rprx-vision#🇫🇷MTC
+vless://ed2d456c-a136-41f1-9b18-a342da63b6ad@89.208.104.217:443?type=tcp&security=reality&pbk=JJhQnQbGrM661Qy7JwFwS5X5JEuPzbi3nfYJ5QS6rCA&fp=chrome&sni=www.wildberries.ru&sid=fe00&spx=%2F&flow=xtls-rprx-vision#🇳🇱MEGAFON
