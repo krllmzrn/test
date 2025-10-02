@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>VKID Test Page</title>
+</head>
+<body>
+  <h1>Тест VKID OneTap</h1>
+
+  <div id="vkid-container">
+    <script src="https://unpkg.com/@vkid/sdk@<3.0.0/dist-sdk/umd/index.js"></script>
+    <script type="text/javascript">
+      function vkidOnSuccess(data) {
+        console.log("Авторизация успешна:", data);
+        alert("Авторизация успешна! Смотрите консоль.");
+      }
+
+      function vkidOnError(error) {
+        console.error("Ошибка авторизации:", error);
+        alert("Ошибка авторизации! Смотрите консоль.");
+      }
+
+      if ('VKIDSDK' in window) {
+        const VKID = window.VKIDSDK;
+
+        VKID.Config.init({
+          app: 54198517,
+          redirectUrl: 'https://rbxtree.io/',
+          responseMode: "callback", // используем строку 'callback'
+          source: "lowcode",
+          scope: '',
+        });
+
+        const oneTap = new VKID.OneTap();
+
+        oneTap.render({
+          container: document.getElementById('vkid-container'),
+          showAlternativeLogin: true
+        })
+        .on(VKID.WidgetEvents.ERROR, vkidOnError)
+        .on(VKID.OneTapInternalEvents.LOGIN_SUCCESS, function (payload) {
+          const code = payload.code;
+          const deviceId = payload.device_id;
+
+          VKID.Auth.exchangeCode(code, deviceId)
+            .then(vkidOnSuccess)
+            .catch(vkidOnError);
+        });
+      }
+    </script>
+  </div>
+</body>
+</html>
